@@ -1,0 +1,292 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42DFBCC5-4BEA-4DD5-A18C-8E00BEE17231}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dnn</RootNamespace>
+    <AssemblyName>dnn</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="boot.js" />
+    <Content Include="global.js" />
+    <Content Include="game.js" />
+    <Content Include="index.html" />
+    <Content Include="assets\angrybaddie.png" />
+    <Content Include="assets\arrow1.png" />
+    <Content Include="assets\arrow2.png" />
+    <Content Include="assets\arrow3.png" />
+    <Content Include="assets\baddie copy.png" />
+    <Content Include="assets\baddie.png" />
+    <Content Include="assets\baddie1.png" />
+    <Content Include="assets\blood.png" />
+    <Content Include="assets\bullet.png" />
+    <Content Include="assets\buttonleft.png" />
+    <Content Include="assets\cache.png" />
+    <Content Include="assets\cachesmall.png" />
+    <Content Include="assets\cbody copy.png" />
+    <Content Include="assets\cbody.png" />
+    <Content Include="assets\chead copy.png" />
+    <Content Include="assets\chead.png" />
+    <Content Include="assets\clickforcoordinates.png" />
+    <Content Include="assets\corner.png" />
+    <Content Include="assets\cp\1.png" />
+    <Content Include="assets\cp\2.png" />
+    <Content Include="assets\cp\3.png" />
+    <Content Include="assets\cp\4.png" />
+    <Content Include="assets\cp\5.png" />
+    <Content Include="assets\cp\6.png" />
+    <Content Include="assets\cp\7.png" />
+    <Content Include="assets\cp\8.png" />
+    <Content Include="assets\cp\9.png" />
+    <Content Include="assets\cp\blank1.png" />
+    <Content Include="assets\cp\blank2.png" />
+    <Content Include="assets\cp\blank3.png" />
+    <Content Include="assets\cp\blank4.png" />
+    <Content Include="assets\cp\blank5.png" />
+    <Content Include="assets\cp\blank6.png" />
+    <Content Include="assets\cp\blank7.png" />
+    <Content Include="assets\cp\blank8.png" />
+    <Content Include="assets\cp\blank9.png" />
+    <Content Include="assets\diamond.png" />
+    <Content Include="assets\dinosaurs.png" />
+    <Content Include="assets\dude copy.png" />
+    <Content Include="assets\dude.png" />
+    <Content Include="assets\dudesmall.png" />
+    <Content Include="assets\enemy-bullet.png" />
+    <Content Include="assets\explode.png" />
+    <Content Include="assets\fence_h.png" />
+    <Content Include="assets\fence_v.png" />
+    <Content Include="assets\firstaid.png" />
+    <Content Include="assets\hborder.png" />
+    <Content Include="assets\i4\i0x0.png" />
+    <Content Include="assets\i4\i0x1.png" />
+    <Content Include="assets\i4\i0x2.png" />
+    <Content Include="assets\i4\i0x3.png" />
+    <Content Include="assets\i4\i1x0.png" />
+    <Content Include="assets\i4\i1x1.png" />
+    <Content Include="assets\i4\i1x2.png" />
+    <Content Include="assets\i4\i1x3.png" />
+    <Content Include="assets\i4\i2x0.png" />
+    <Content Include="assets\i4\i2x1.png" />
+    <Content Include="assets\i4\i2x2.png" />
+    <Content Include="assets\i4\i2x3.png" />
+    <Content Include="assets\i4\i3x0.png" />
+    <Content Include="assets\i4\i3x1.png" />
+    <Content Include="assets\i4\i3x2.png" />
+    <Content Include="assets\i4\i3x3.png" />
+    <Content Include="assets\i5\5x5.png" />
+    <Content Include="assets\i5\i0x0.png" />
+    <Content Include="assets\i5\i0x1.png" />
+    <Content Include="assets\i5\i0x2.png" />
+    <Content Include="assets\i5\i0x3.png" />
+    <Content Include="assets\i5\i0x4.png" />
+    <Content Include="assets\i5\i1x0.png" />
+    <Content Include="assets\i5\i1x1.png" />
+    <Content Include="assets\i5\i1x2.png" />
+    <Content Include="assets\i5\i1x3.png" />
+    <Content Include="assets\i5\i1x4.png" />
+    <Content Include="assets\i5\i2x0.png" />
+    <Content Include="assets\i5\i2x1.png" />
+    <Content Include="assets\i5\i2x2.png" />
+    <Content Include="assets\i5\i2x3.png" />
+    <Content Include="assets\i5\i2x4.png" />
+    <Content Include="assets\i5\i3x0.png" />
+    <Content Include="assets\i5\i3x1.png" />
+    <Content Include="assets\i5\i3x2.png" />
+    <Content Include="assets\i5\i3x3.png" />
+    <Content Include="assets\i5\i3x4.png" />
+    <Content Include="assets\i5\i4x0.png" />
+    <Content Include="assets\i5\i4x1.png" />
+    <Content Include="assets\i5\i4x2.png" />
+    <Content Include="assets\i5\i4x3.png" />
+    <Content Include="assets\i5\i4x4.png" />
+    <Content Include="assets\i6\6x6.png" />
+    <Content Include="assets\i6\i0x0.png" />
+    <Content Include="assets\i6\i0x1.png" />
+    <Content Include="assets\i6\i0x2.png" />
+    <Content Include="assets\i6\i0x3.png" />
+    <Content Include="assets\i6\i0x4.png" />
+    <Content Include="assets\i6\i0x5.png" />
+    <Content Include="assets\i6\i1x0.png" />
+    <Content Include="assets\i6\i1x1.png" />
+    <Content Include="assets\i6\i1x2.png" />
+    <Content Include="assets\i6\i1x3.png" />
+    <Content Include="assets\i6\i1x4.png" />
+    <Content Include="assets\i6\i1x5.png" />
+    <Content Include="assets\i6\i2x0.png" />
+    <Content Include="assets\i6\i2x1.png" />
+    <Content Include="assets\i6\i2x2.png" />
+    <Content Include="assets\i6\i2x3.png" />
+    <Content Include="assets\i6\i2x4.png" />
+    <Content Include="assets\i6\i2x5.png" />
+    <Content Include="assets\i6\i3x0.png" />
+    <Content Include="assets\i6\i3x1.png" />
+    <Content Include="assets\i6\i3x2.png" />
+    <Content Include="assets\i6\i3x3.png" />
+    <Content Include="assets\i6\i3x4.png" />
+    <Content Include="assets\i6\i3x5.png" />
+    <Content Include="assets\i6\i4x0.png" />
+    <Content Include="assets\i6\i4x1.png" />
+    <Content Include="assets\i6\i4x2.png" />
+    <Content Include="assets\i6\i4x3.png" />
+    <Content Include="assets\i6\i4x4.png" />
+    <Content Include="assets\i6\i4x5.png" />
+    <Content Include="assets\i6\i5x0.png" />
+    <Content Include="assets\i6\i5x1.png" />
+    <Content Include="assets\i6\i5x2.png" />
+    <Content Include="assets\i6\i5x3.png" />
+    <Content Include="assets\i6\i5x4.png" />
+    <Content Include="assets\i6\i5x5.png" />
+    <Content Include="assets\i7\7x7.png" />
+    <Content Include="assets\invader.png" />
+    <Content Include="assets\invader32x32x4.png" />
+    <Content Include="assets\jump.png" />
+    <Content Include="assets\left.png" />
+    <Content Include="assets\logo1.png" />
+    <Content Include="assets\pen copy.png" />
+    <Content Include="assets\pen.png" />
+    <Content Include="assets\platform.png" />
+    <Content Include="assets\platformlight.png" />
+    <Content Include="assets\player.png" />
+    <Content Include="assets\randomdinos\rd1l.png" />
+    <Content Include="assets\randomdinos\rd1r.png" />
+    <Content Include="assets\randomdinos\rd2l.png" />
+    <Content Include="assets\randomdinos\rd2r.png" />
+    <Content Include="assets\randomdinos\rd3l.png" />
+    <Content Include="assets\randomdinos\rd3r.png" />
+    <Content Include="assets\randomdinos\rd4l.png" />
+    <Content Include="assets\randomdinos\rd4r.png" />
+    <Content Include="assets\randomdinos\rd5l.png" />
+    <Content Include="assets\randomdinos\rd5r.png" />
+    <Content Include="assets\randomdinos\rd6l.png" />
+    <Content Include="assets\randomdinos\rd6r.png" />
+    <Content Include="assets\randomdinos\rd7l.png" />
+    <Content Include="assets\randomdinos\rd7r.png" />
+    <Content Include="assets\randomdinos\rd8l.png" />
+    <Content Include="assets\randomdinos\rd8r.png" />
+    <Content Include="assets\randomdinos\rd9l.png" />
+    <Content Include="assets\randomdinos\rd9r.png" />
+    <Content Include="assets\right.png" />
+    <Content Include="assets\sign_stop.png" />
+    <Content Include="assets\sky.png" />
+    <Content Include="assets\star.png" />
+    <Content Include="assets\starfield.png" />
+    <Content Include="assets\steg copy 2.png" />
+    <Content Include="assets\steg copy.png" />
+    <Content Include="assets\steg.png" />
+    <Content Include="assets\steg128-108.png" />
+    <Content Include="assets\stegasaurusjump.png" />
+    <Content Include="assets\stegasaurusleft.png" />
+    <Content Include="assets\stegasaurusright.png" />
+    <Content Include="assets\steginvader.png" />
+    <Content Include="assets\stegsmall.png" />
+    <Content Include="assets\steg_angry.png" />
+    <Content Include="assets\steg_friendly.png" />
+    <Content Include="assets\vborder.png" />
+    <Content Include="phaser.js" />
+    <Content Include="load.js" />
+    <Content Include="lose.js" />
+    <Content Include="menu.js" />
+    <Content Include="play.js" />
+    <Content Include="Web.config" />
+    <Content Include="win.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50792</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
